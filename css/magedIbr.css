@@ -1,17 +1,22 @@
 
-.item1 { grid-area: header; }
+.item1 {
+    grid-area: header;
+    padding-bottom: 5px;
+}
 .item2 { grid-area: main; }
 .item3 { grid-area: buttons; }
-.item5 { grid-area: footer; }
+.item4 { grid-area: footer; }
 
 html, body {
     height: 100%;
     margin: 0;
 }
-
+header{
+    font-size: small;
+}
 
 .grid-container {
-    height:100%;
+     min-height: 360px;
     display: grid;
     grid-template-areas:
             'header header header header header header'
@@ -22,13 +27,10 @@ html, body {
     background-color: #2196F3;
     padding: 1px;
 
-    grid-template-rows: repeat(3,3fr);
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-columns: auto ;
+    position: center;
+
+
 }
 
-.grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 30px 0;
-    font-size: 30px;
-}

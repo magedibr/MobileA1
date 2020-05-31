@@ -1,11 +1,18 @@
 
 .item1 {
     grid-area: header;
+    border-collapse: collapse;
+    border: 1px solid black;
     padding-bottom: 5px;
 }
-.item2 { grid-area: main; }
-.item3 { grid-area: buttons; }
-.item4 { grid-area: footer; }
+.item2 { grid-area: main;
+    border: 1px solid black;}
+
+.item3 { grid-area: buttons;
+    border: 1px solid black;}
+
+.item4 { grid-area: footer;
+    border: 1px solid black;}
 
 html, body {
     height: 100%;

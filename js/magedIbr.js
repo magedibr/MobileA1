@@ -54,10 +54,13 @@ $(document).ready(function() {
     //$("section[title|='Apple']").html(x);
 
 
+
+    //Populate list
+
+
+
     for (let i of myData) {
-
         let y = i.element;
-
         let message = `${i.intial} is for ${i.element}`;
 
         let j;
@@ -68,36 +71,31 @@ $(document).ready(function() {
              if(y =='milk')
 
                  $("section[title|='milk']").html(message);
-
-                  console.log(message);
-
+                //  console.log(message);
                  if(y=='apple')
 
                      $("section[title|='apple']").html(message);
+                  //   console.log(message);
 
-                     console.log(message);
+                      if(y=='goat')
+                         $("section[title|='goat']").html(message);
 
-                  if(y=='goat')
-                      $("section[title|='goat']").html(message);
+                        if(y=='ear')
+                             $("section[title|='ear']").html(message);
+                    //         console.log(message);
 
-                     if(y=='ear')
+                             if(y=='dog')
+                                  $("section[title|='dog']").html(message);
+                      //              console.log(message);
 
-                         $("section[title|='ear']").html(message);
-                         console.log(message);
+                                    if(y=='iris')
+                                         $("section[title|='iris']").html(message);;
 
-                        if(y=='dog')
+                                          if(y=='book')
+                                              $("section[title|='book']").html(message);
 
-                            $("section[title|='dog']").html(message);
-                           console.log(message);
-
-                        if(y=='iris')
-                            $("section[title|='iris']").html(message);;
-
-                             if(y=='book')
-                                 $("section[title|='book']").html(message);
-
-                                if(y=='racoon')
-                                    $("section[title|='racoon']").html(message);
+                                          if(y=='racoon')
+                                                  $("section[title|='racoon']").html(message);
 
             {break;}
 

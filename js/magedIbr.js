@@ -48,6 +48,7 @@ $(document).ready(function() {
     myData[7] = new MyData("R", "racoon", "/images/racoon.jpeg");
 
 
+
     //  let x = myData[3];
     //console.log(x);
     //$("section[title|='Apple']").html(x);
@@ -55,35 +56,48 @@ $(document).ready(function() {
 
     for (let i of myData) {
 
-        let arr = i;
+        let y = i.element;
+
+        let message = `${i.intial} is for ${i.element}`;
+
         let j;
 
         for ( j=0; j < myData.length; j++){
 
 
-             if(arr.element=='milk')
-                  console.log(arr.element);
+             if(y =='milk')
 
-                 if(arr.element=='apple')
-                     console.log(arr.element);
+                 $("section[title|='milk']").html(message);
 
-                  if(arr.element=='goat')
-                        console.log(arr.element);
+                  console.log(message);
 
-                     if(arr.element=='ear')
-                         console.log(arr.element);
+                 if(y=='apple')
 
-                        if(arr.element=='dog')
-                           console.log(arr.element);
+                     $("section[title|='apple']").html(message);
 
-                        if(arr.element=='iris')
-                             console.log(arr.element);
+                     console.log(message);
 
-                             if(arr.element=='book')
-                                  console.log(arr.element);
+                  if(y=='goat')
+                      $("section[title|='goat']").html(message);
 
-                                if(arr.element=='racoon')
-                                      console.log(arr.element);
+                     if(y=='ear')
+
+                         $("section[title|='ear']").html(message);
+                         console.log(message);
+
+                        if(y=='dog')
+
+                            $("section[title|='dog']").html(message);
+                           console.log(message);
+
+                        if(y=='iris')
+                            $("section[title|='iris']").html(message);;
+
+                             if(y=='book')
+                                 $("section[title|='book']").html(message);
+
+                                if(y=='racoon')
+                                    $("section[title|='racoon']").html(message);
 
             {break;}
 

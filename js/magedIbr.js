@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 
 
-    //Populate list
+    //Populate Array of objects using for/of loop
 
 
 

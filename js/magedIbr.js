@@ -62,18 +62,25 @@ $(document).ready(function() {
 
 
 
-      $("section[title|= dog] ").html(JSON.stringify(myData[3]))
+
 
 
         for(let i of myData){
+        let y = 0;
+            y++;
 
-            let x = i.element;
-
-            if( x = $("section[title|= x] ").html("Word Match")){
+            $ ("section[title|= [y]]").html(JSON.stringify(i))
 
 
 
-            }
+
+          /*  if( x = $("section[title|= x] ").html("Word Match")){
+
+              $ ("section[title|= x ]").html(i.toString());
+                console.log(i);
+
+
+            } */
         }
 
 

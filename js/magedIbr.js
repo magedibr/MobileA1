@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 
     //Template Constants
-    let headMessage=`A1 for : ${name}`;
+    let headMessage = `A1 for : ${name}`;
     let footMessage = `Student ID: ${ID} / Login: ${Login}`;
 
 
@@ -19,69 +19,104 @@ $(document).ready(function() {
 
     //Footer formatting
     $(".item4").html(footMessage);
-    $(".item4").css("text-align","center");
+    $(".item4").css("text-align", "center");
 
 
     //Data class
-    class MyData{
+    class MyData {
 
-        constructor(initial,element ,image ) {
-
-            this.intial=initial;
-            this.element=element;
-            this.image= image;
+        constructor(initial, element, image) {
+            this.intial = initial;
+            this.element = element;
+            this.image = image;
         }
 
-
-
-
-
-
-
-
-
     }
-  //  let milk pic = /sdsd
+
+    //  let milk pic = /sdsd
 
     // make an array with the objects, use for if to make list, add the image?
 
-    let myData = new Array();
-    myData.push(new MyData("M","milk","/images/milk.jpeg"));
-    myData.push(new MyData("A","apple","/images/apple.jpeg"));
-    myData.push(new MyData("G","goat","/images/goat.jpeg"));
-    myData.push(new MyData("E","ear","/images/ear.jpeg"));
-    myData.push(new MyData("D","dog","/images/dog.jpeg"));
-    myData.push(new MyData("I","iris","/images/iris.jpeg"));
-    myData.push(new MyData("B","book","/images/book.jpeg"));
-    myData.push(new MyData("R","racoon","/images/racoon.jpeg"));
+    let myData = [];
+    myData[0] = new MyData("M", "milk", "/images/milk.jpeg");
+    myData[1] = new MyData("A", "apple", "/images/apple.jpeg");
+    myData[2] = new MyData("G", "goat", "/images/goat.jpeg");
+    myData[3] = new MyData("E", "ear", "/images/ear.jpeg");
+    myData[4] = new MyData("D", "dog", "/images/dog.jpeg");
+    myData[5] = new MyData("I", "iris", "/images/iris.jpeg");
+    myData[6] = new MyData("B", "book", "/images/book.jpeg");
+    myData[7] = new MyData("R", "racoon", "/images/racoon.jpeg");
 
 
-  //  let x = myData[3];
+    //  let x = myData[3];
     //console.log(x);
     //$("section[title|='Apple']").html(x);
 
 
+    for (let i of myData) {
+
+        let arr = i;
+        let j;
+
+        for ( j=0; j < myData.length; j++){
+
+
+             if(arr.element=='milk')
+                  console.log(arr.element);
+
+                 if(arr.element=='apple')
+                     console.log(arr.element);
+
+                  if(arr.element=='goat')
+                        console.log(arr.element);
+
+                     if(arr.element=='ear')
+                         console.log(arr.element);
+
+                        if(arr.element=='dog')
+                           console.log(arr.element);
+
+                        if(arr.element=='iris')
+                             console.log(arr.element);
+
+                             if(arr.element=='book')
+                                  console.log(arr.element);
+
+                                if(arr.element=='racoon')
+                                      console.log(arr.element);
+
+            {break;}
+
+
+
+       }
 
 
 
 
-        for(let i of myData){
-        let y = 0;
-            y++;
-
-            $ ("section[title|= [y]]").html(JSON.stringify(i))
 
 
 
 
-          /*  if( x = $("section[title|= x] ").html("Word Match")){
+        /*
+        $("section[title|='apple']").html("Apple");
+        let x = JSON.stringify(i.element);
 
-              $ ("section[title|= x ]").html(i.toString());
-                console.log(i);
+        if (x = "milk")
+            $("section[title|='milk']").html("milk");
+
+        else if (x = "Apple")
+            $("section[title|='apple']").html("Apple");
 
 
-            } */
-        }
+
+        console.log(i.element);
+*/
+    }
+
+
+
+
 
 
 

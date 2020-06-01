@@ -29,6 +29,8 @@ $(document).ready(function() {
         }
     }
 
+    // make an array with the objects, use for if to make list, add the image?
+
     let myData = new Array();
     myData.push(new MyData("M","Mom","Dohs"));
 

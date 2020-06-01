@@ -31,26 +31,49 @@ $(document).ready(function() {
             this.element=element;
             this.image= image;
         }
-    }
 
+
+
+
+
+
+
+
+
+    }
+  //  let milk pic = /sdsd
 
     // make an array with the objects, use for if to make list, add the image?
 
     let myData = new Array();
-    myData.push(new MyData("M","Milk","/images/milk.jpeg"));
-    myData.push(new MyData("A","Apple","/images/apple.jpeg"));
-    myData.push(new MyData("G","Goat","/images/goat.jpeg"));
-    myData.push(new MyData("E","Ear","/images/ear.jpeg"));
-    myData.push(new MyData("D","Dog","/images/dog.jpeg"));
-    myData.push(new MyData("I","Iris","/images/iris.jpeg"));
-    myData.push(new MyData("B","Book","/images/book.jpeg"));
-    myData.push(new MyData("R","Racoon","/images/racoon.jpeg"));
+    myData.push(new MyData("M","milk","/images/milk.jpeg"));
+    myData.push(new MyData("A","apple","/images/apple.jpeg"));
+    myData.push(new MyData("G","goat","/images/goat.jpeg"));
+    myData.push(new MyData("E","ear","/images/ear.jpeg"));
+    myData.push(new MyData("D","dog","/images/dog.jpeg"));
+    myData.push(new MyData("I","iris","/images/iris.jpeg"));
+    myData.push(new MyData("B","book","/images/book.jpeg"));
+    myData.push(new MyData("R","racoon","/images/racoon.jpeg"));
 
 
+  //  let x = myData[3];
+    //console.log(x);
+    //$("section[title|='Apple']").html(x);
+
+
+
+      $("section[title|= dog] ").html(JSON.stringify(myData[3]))
 
 
         for(let i of myData){
-            $(".item2").html(i);
+
+            let x = i.element;
+
+            if( x = $("section[title|= x] ").html("Word Match")){
+
+
+
+            }
         }
 
 

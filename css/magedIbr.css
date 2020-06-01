@@ -37,7 +37,8 @@ header{
     grid-template-rows: 30px 1fr 30px;
     grid-template-columns: auto ;
     position: center;
-
-
 }
+
+.hStyle {text-align: center; font-family: Times New Roman; color: white; background: navy;}
+
 

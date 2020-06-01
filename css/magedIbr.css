@@ -14,13 +14,9 @@
 .item4 { grid-area: footer;
     border: 1px solid black;}
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
-header{
-    font-size: small;
-}
+html, body { margin: 0;height: 100%;}
+
+header{font-size: small;}
 
 .grid-container {
      min-height: 360px;

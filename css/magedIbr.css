@@ -56,7 +56,7 @@ li{ margin-top: auto;
     text-decoration: underline;
 }
 
-a{
+#ButtonFormat{
     text-decoration: none; font: menu;
     display: inline-block; padding: 2px 8px;
     background: ButtonFace; color: ButtonText;

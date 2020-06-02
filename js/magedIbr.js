@@ -2,9 +2,16 @@ $(document).ready(function() {
     console.log("in doc ready");
 
     //Student Variables
-    const name = "Abdelrahman";
-    const ID = 991343504;
-    const Login = "magedibr";
+     const name = "Abdelrahman";
+     const ID =   "991343504";
+     const Login ="magedibr";
+
+
+    //Set and store the variables using Key, Value pairs.
+    localStorage.setItem("name","Abdelrahman");
+    localStorage.setItem("ID","991343504");
+    localStorage.setItem("Login","magedibr");
+
 
 
     //Template Constants
@@ -33,9 +40,7 @@ $(document).ready(function() {
 
     }
 
-    //  let milk pic = /sdsd
 
-    // make an array with the objects, use for if to make list, add the image?
 
     let myData = [];
     myData[0] = new MyData("M", "milk", "images/milk.jpeg");

@@ -69,28 +69,23 @@ $(document).ready(function() {
 
              if(y =='milk')
 
-                   $("section[title|='milk']").html(message +" "+ src );
 
-                //  console.log(message);
+                 $("section[title|='milk']").html(message +" "+ src );
 
-
-            if(y=='apple')
+                    if(y=='apple')
 
                      $("section[title|='apple']").html(message +"  "+ src );
-                  //   console.log(message);
 
                       if(y=='goat')
                          $("section[title|='goat']").html(message +"  "+ src );
 
                         if(y=='earth')
                              $("section[title|='earth']").html(message +"  "+ src );
-                    //         console.log(message);
 
                              if(y=='dog')
                                   $("section[title|='dog']").html(message +"  "+ src );
-                      //              console.log(message);
 
-                                    if(y=='iris')
+                                  if(y=='iris')
                                          $("section[title|='iris']").html(message+"  "+ src );
 
                                           if(y=='book')
@@ -99,12 +94,62 @@ $(document).ready(function() {
                                           if(y=='racoon')
                                                   $("section[title|='racoon']").html(message+"  "+ src );
 
-            {break;}
+                 {break;}
 
 
 
        }
-            // This part took me quite a while
+        //Fill input box value using Jquery so that it dynamicly changes based on the name
+
+
+
+
+        // Buttons
+        } //  $("#TextInput").val(JSON.stringify(myData[0].intial));
+
+
+
+
+
+    $("#Toggle").click(function() {
+        let input = $("#TextInput").val();
+        let selector = input.toString();
+
+        console.log(selector);
+
+        $(".item2 section[title^=selector]").toggle();
+    });
+
+
+
+
+    /*
+
+        let q;
+
+        let input = $("#TextInput").val();
+
+
+        for( q=0;q<myData.length;q++ ){
+
+            if (myData[q].intial = input){
+
+                $("#Toggle").click(function() {
+                    $("#item3").removeClass(myData[q].intial = input);
+                });
+
+
+
+
+            }*/
+
+
+
+
+
+
+
+
 
 
 
@@ -126,16 +171,6 @@ $(document).ready(function() {
 
         console.log(i.element);
 */
-    }
-
-
-
-
-
-
-
-
-
 
 
 })

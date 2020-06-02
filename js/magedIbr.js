@@ -60,7 +60,7 @@ $(document).ready(function() {
     for (let i of myData) {
         let y = i.element;
         let k = i.image;
-        let src = "<img src = "+k+" ;+ width = 35; +  height =  30 + border-radius:50% >";
+        let src = "<img src = "+k+" ;+ width = 35   height =  30  border-radius:50% >";
         let message = `${i.intial} is for ${i.element}`;
         let j;
 
@@ -112,18 +112,55 @@ $(document).ready(function() {
 
 
 
+   // var name = this.name;
+    //$("input[name=" + name + "]").hide();
+
+
+// Buttons
+
     $("#Toggle").click( function() {
       //  let input = $("#TextInput").val();
 
-        let ttt = JSON.stringify($("#TextInput").val());
+        let Intial = $("#TextInput").val();
 
-        console.log(ttt)
+       // JSON.stringify(ttt);
 
+        console.log(Intial);
 
-        //cope and paste the contents of the ttt variable into the jquery selector
+        $(".item2 section[title ^= "+ Intial +"]").toggle();
 
-        $(".item2 section[title ^= ttt]").toggle();
     });
+
+
+
+    $("#Style").click( function() {
+    console.log("yep")
+        $("li").addClass("liStyle");
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

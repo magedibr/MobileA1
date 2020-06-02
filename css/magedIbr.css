@@ -7,10 +7,12 @@
 }
 .item2 { grid-area: main;
     border: 1px solid black;
-    padding-top: 0;    }
+    padding-top: 0;
+    justify-content: center;}
 
 .item3 { grid-area: buttons;
-    border: 1px solid black;}
+    border: 1px solid black;
+justify-items: center;}
 
 .item4 { grid-area: footer;
     border: 1px solid black;}
@@ -36,7 +38,8 @@ header{font-size: small;}
     position: center;
 }
 
-.hStyle {text-align: center; font-family: Times New Roman; color: white; background: navy;}
+.hStyle {text-align: center;
+    font-family: Times New Roman, serif; color: black; background:ghostwhite;}
 
 img {
     border-radius: 50%;
@@ -45,4 +48,18 @@ img {
 
 
 li{ margin-top: auto;
-    margin-bottom: auto;    }
+    margin-bottom: auto;
+    }
+
+
+.liStyle{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none; font: menu;
+    display: inline-block; padding: 2px 8px;
+    background: ButtonFace; color: ButtonText;
+    border-style: solid; border-width: 2px;
+    border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+}

@@ -103,21 +103,20 @@ $(document).ready(function() {
 
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+       //remove the double quotes around the Mydata class
 
         // Buttons
         } //  $("#TextInput").val(JSON.stringify(myData[0].intial));
 
 
 
+    $("#Toggle").click( function() {
 
-
-    $("#Toggle").click(function() {
         let input = $("#TextInput").val();
-        let selector = input.toString();
+        $(".item2 section[title ^= input]").toggle();
 
-        console.log(selector);
-
-        $(".item2 section[title^=selector]").toggle();
     });
 
 

@@ -41,7 +41,7 @@ $(document).ready(function() {
     myData[0] = new MyData("M", "milk", "images/milk.jpeg");
     myData[1] = new MyData("A", "apple", "images/apple.jpeg");
     myData[2] = new MyData("G", "goat", "images/goat.jpeg");
-    myData[3] = new MyData("E", "ear", "images/ear.jpeg");
+    myData[3] = new MyData("E", "earth", "images/earth.jpeg");
     myData[4] = new MyData("D", "dog", "images/dog.jpeg");
     myData[5] = new MyData("I", "iris", "images/iris.jpeg");
     myData[6] = new MyData("B", "book", "images/book.jpeg");
@@ -60,14 +60,12 @@ $(document).ready(function() {
     for (let i of myData) {
         let y = i.element;
         let k = i.image;
-
-        let src = "<img src = "+k+" width = 10  height =  10 >";
-
+        let src = "<img src = "+k+" ;+ width = 35; +  height =  30 + border-radius:50% >";
         let message = `${i.intial} is for ${i.element}`;
         let j;
 
-        for ( j=0; j < myData.length; j++){
 
+        for ( j=0; j < myData.length; j++){
 
              if(y =='milk')
 
@@ -78,28 +76,28 @@ $(document).ready(function() {
 
             if(y=='apple')
 
-                     $("section[title|='apple']").html(message);
+                     $("section[title|='apple']").html(message +"  "+ src );
                   //   console.log(message);
 
                       if(y=='goat')
-                         $("section[title|='goat']").html(message);
+                         $("section[title|='goat']").html(message +"  "+ src );
 
-                        if(y=='ear')
-                             $("section[title|='ear']").html(message);
+                        if(y=='earth')
+                             $("section[title|='earth']").html(message +"  "+ src );
                     //         console.log(message);
 
                              if(y=='dog')
-                                  $("section[title|='dog']").html(message);
+                                  $("section[title|='dog']").html(message +"  "+ src );
                       //              console.log(message);
 
                                     if(y=='iris')
-                                         $("section[title|='iris']").html(message);
+                                         $("section[title|='iris']").html(message+"  "+ src );
 
                                           if(y=='book')
-                                              $("section[title|='book']").html(message);
+                                              $("section[title|='book']").html(message+"  "+ src );
 
                                           if(y=='racoon')
-                                                  $("section[title|='racoon']").html(message);
+                                                  $("section[title|='racoon']").html(message+"  "+ src );
 
             {break;}
 

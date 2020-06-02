@@ -6,7 +6,8 @@
     padding-bottom: 5px;
 }
 .item2 { grid-area: main;
-    border: 1px solid black;}
+    border: 1px solid black;
+    padding-top: 0;    }
 
 .item3 { grid-area: buttons;
     border: 1px solid black;}
@@ -37,4 +38,11 @@ header{font-size: small;}
 
 .hStyle {text-align: center; font-family: Times New Roman; color: white; background: navy;}
 
+img {
+    border-radius: 50%;
+    display: inline-block;
+}
 
+
+li{ margin-top: auto;
+    margin-bottom: auto;    }

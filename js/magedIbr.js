@@ -38,14 +38,14 @@ $(document).ready(function() {
     // make an array with the objects, use for if to make list, add the image?
 
     let myData = [];
-    myData[0] = new MyData("M", "milk", "/images/milk.jpeg");
-    myData[1] = new MyData("A", "apple", "/images/apple.jpeg");
-    myData[2] = new MyData("G", "goat", "/images/goat.jpeg");
-    myData[3] = new MyData("E", "ear", "/images/ear.jpeg");
-    myData[4] = new MyData("D", "dog", "/images/dog.jpeg");
-    myData[5] = new MyData("I", "iris", "/images/iris.jpeg");
-    myData[6] = new MyData("B", "book", "/images/book.jpeg");
-    myData[7] = new MyData("R", "racoon", "/images/racoon.jpeg");
+    myData[0] = new MyData("M", "milk", "images/milk.jpeg");
+    myData[1] = new MyData("A", "apple", "images/apple.jpeg");
+    myData[2] = new MyData("G", "goat", "images/goat.jpeg");
+    myData[3] = new MyData("E", "ear", "images/ear.jpeg");
+    myData[4] = new MyData("D", "dog", "images/dog.jpeg");
+    myData[5] = new MyData("I", "iris", "images/iris.jpeg");
+    myData[6] = new MyData("B", "book", "images/book.jpeg");
+    myData[7] = new MyData("R", "racoon", "images/racoon.jpeg");
 
 
 
@@ -53,16 +53,17 @@ $(document).ready(function() {
     //console.log(x);
     //$("section[title|='Apple']").html(x);
 
-
-
     //Populate Array of objects using for/of loop
 
 
 
     for (let i of myData) {
         let y = i.element;
-        let message = `${i.intial} is for ${i.element}`;
+        let k = i.image;
 
+        let src = "<img src = "+k+" width = 10  height =  10 >";
+
+        let message = `${i.intial} is for ${i.element}`;
         let j;
 
         for ( j=0; j < myData.length; j++){
@@ -70,9 +71,12 @@ $(document).ready(function() {
 
              if(y =='milk')
 
-                 $("section[title|='milk']").html(message);
+                   $("section[title|='milk']").html(message +" "+ src );
+
                 //  console.log(message);
-                 if(y=='apple')
+
+
+            if(y=='apple')
 
                      $("section[title|='apple']").html(message);
                   //   console.log(message);
@@ -89,7 +93,7 @@ $(document).ready(function() {
                       //              console.log(message);
 
                                     if(y=='iris')
-                                         $("section[title|='iris']").html(message);;
+                                         $("section[title|='iris']").html(message);
 
                                           if(y=='book')
                                               $("section[title|='book']").html(message);
@@ -102,7 +106,7 @@ $(document).ready(function() {
 
 
        }
-
+            // This part took me quite a while
 
 
 

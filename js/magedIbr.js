@@ -113,10 +113,16 @@ $(document).ready(function() {
 
 
     $("#Toggle").click( function() {
+      //  let input = $("#TextInput").val();
 
-        let input = $("#TextInput").val();
-        $(".item2 section[title ^= input]").toggle();
+        let ttt = JSON.stringify($("#TextInput").val());
 
+        console.log(ttt)
+
+
+        //cope and paste the contents of the ttt variable into the jquery selector
+
+        $(".item2 section[title ^= ttt]").toggle();
     });
 
 

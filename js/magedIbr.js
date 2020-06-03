@@ -54,170 +54,73 @@ $(document).ready(function() {
 
 
 
-    //  let x = myData[3];
-    //console.log(x);
-    //$("section[title|='Apple']").html(x);
+
 
     //Populate Array of objects using for/of loop
-
-
-
     for (let i of myData) {
         let y = i.element;
         let k = i.image;
-        let src = "<img src = "+k+" ;+ width = 35   height =  30  border-radius:50% >";
+        let src = "<img src = " + k + " ;+ width = 35   height =  30  border-radius:50% >";
         let message = `${i.intial} is for ${i.element}`;
         let j;
 
 
-        for ( j=0; j < myData.length; j++){
+        for (j = 0; j < myData.length; j++) {
 
-             if(y =='milk')
-
-
-                 $("section[title|='milk']").html(message +" "+ src );
-
-                    if(y=='apple')
-
-                     $("section[title|='apple']").html(message +"  "+ src );
-
-                      if(y=='goat')
-                         $("section[title|='goat']").html(message +"  "+ src );
-
-                        if(y=='earth')
-                             $("section[title|='earth']").html(message +"  "+ src );
-
-                             if(y=='dog')
-                                  $("section[title|='dog']").html(message +"  "+ src );
-
-                                  if(y=='iris')
-                                         $("section[title|='iris']").html(message+"  "+ src );
-
-                                          if(y=='book')
-                                              $("section[title|='book']").html(message+"  "+ src );
-
-                                          if(y=='racoon')
-                                                  $("section[title|='racoon']").html(message+"  "+ src );
-
-                 {break;}
+            if (y == 'milk')
 
 
+                $("section[title|='milk']").html(message + " " + src);
 
-       }
-        //Fill input box value using Jquery so that it dynamicly changes based on the name
+            if (y == 'apple')
+
+                $("section[title|='apple']").html(message + "  " + src);
+
+            if (y == 'goat')
+                $("section[title|='goat']").html(message + "  " + src);
+
+            if (y == 'earth')
+                $("section[title|='earth']").html(message + "  " + src);
+
+            if (y == 'dog')
+                $("section[title|='dog']").html(message + "  " + src);
+
+            if (y == 'iris')
+                $("section[title|='iris']").html(message + "  " + src);
+
+            if (y == 'book')
+                $("section[title|='book']").html(message + "  " + src);
+
+            if (y == 'racoon')
+                $("section[title|='racoon']").html(message + "  " + src);
+
+            {
+                break;
+            }
 
 
+        }
+    }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-       //remove the double quotes around the Mydata class
+        // Fill input box dynamiccly based on the names intial.
+
+        $("#TextInput").val(JSON.stringify(myData[0].intial));
+
 
         // Buttons
-        } //  $("#TextInput").val(JSON.stringify(myData[0].intial));
 
+        $("#Toggle").click( function() {
+           let Intial = $("#TextInput").val();
+           $(".item2 section[title ^= "+ Intial +"]").toggle();
 
+       });
 
-   // var name = this.name;
-    //$("input[name=" + name + "]").hide();
+          $("#Style").click( function() {
+             console.log("yep")
+               $("li").addClass("liStyle");
 
-
-// Buttons
-
-    $("#Toggle").click( function() {
-      //  let input = $("#TextInput").val();
-
-        let Intial = $("#TextInput").val();
-
-       // JSON.stringify(ttt);
-
-        console.log(Intial);
-
-        $(".item2 section[title ^= "+ Intial +"]").toggle();
-
-    });
-
-
-
-    $("#Style").click( function() {
-    console.log("yep")
-        $("li").addClass("liStyle");
-
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
-
-        let q;
-
-        let input = $("#TextInput").val();
-
-
-        for( q=0;q<myData.length;q++ ){
-
-            if (myData[q].intial = input){
-
-                $("#Toggle").click(function() {
-                    $("#item3").removeClass(myData[q].intial = input);
-                });
-
-
-
-
-            }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*
-        $("section[title|='apple']").html("Apple");
-        let x = JSON.stringify(i.element);
-
-        if (x = "milk")
-            $("section[title|='milk']").html("milk");
-
-        else if (x = "Apple")
-            $("section[title|='apple']").html("Apple");
-
-
-
-        console.log(i.element);
-*/
+         });
 
 
 })

@@ -2,16 +2,19 @@ $(document).ready(function() {
     console.log("in doc ready");
 
     //Retrive variable from local storage
-    const name = localStorage.getItem("name");
-    const Id= localStorage.getItem("ID");
-    const login = localStorage.getItem("Login");
+    let nameP = localStorage.getItem("name");
+    let IdP= localStorage.getItem("ID");
+    let loginP = localStorage.getItem("Login");
 
-console.log(name+Id+login);
+    //Set Template literals
+    let nameTemp = `My name is ${nameP}`;
+    let IDTemp =  `My ID is ${IdP}`;
+    let loginTemp=`My login is ${loginP}`;
 
 
-    $("p").html(name);
-
-
+    $("#name").html(nameTemp);
+    $("#ID").html(IDTemp);
+    $("#Login").html(loginTemp);
 
 
 
